@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['www.satoriahotel.com', 'example.com'], // Add the domains where you're fetching images from
+  },
 };
 
 export default nextConfig;
